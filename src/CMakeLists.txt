@@ -11,9 +11,6 @@ add_library(morse morse.cpp ${HEADER_LIST})
 # We need this directory, and users of our library will need it too
 target_include_directories(morse PUBLIC ../include)
 
-# This depends on (header only) boost
-target_link_libraries(morse PRIVATE Boost::boost)
-
 # All users of this library will need at least C++11
 target_compile_features(morse PUBLIC cxx_std_11)
 
