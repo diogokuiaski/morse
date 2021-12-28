@@ -1,5 +1,6 @@
 # CMake build dir
 /build/
+Testing/
 
 # Prerequisites
 *.d
